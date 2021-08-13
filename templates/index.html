@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% for num in list %}
+{% if num >= 3 %}
+<h{{ num }}>This is Home Page.</h{{ num }}>
+{% else %}
+<h{{ num }}>This is Home Page.Not About page.</h{{ num }}>
+{% endif %}
+{% endfor %}
+
+{% for num in list %}
+<h{{ num }}>This is Home Page.</h{{ num }}>
+{% endfor %}
+
+
+{% endblock %}
